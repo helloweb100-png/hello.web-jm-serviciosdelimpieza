@@ -389,6 +389,15 @@ body.menu-open { overflow: hidden; }
 .hero__line--accent { margin-top: .04em; }
 .hero__title em { font-size: 1.12em; }
 .hero__lead { max-width: 52ch; font-size: clamp(1.02rem, 2.6vw, 1.2rem); line-height: 1.65; color: var(--ink-2); }
+.hero__services { display: grid; gap: 12px; width: 100%; }
+.hero__services-title { font: 700 clamp(1.02rem, 2.6vw, 1.2rem)/1.3 var(--font-d); letter-spacing: -.02em; color: var(--ink); }
+.hero__services-list { display: flex; flex-wrap: wrap; gap: 8px; max-width: 56ch; }
+.hero__services-list li {
+    display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 6px; border-radius: 999px;
+    font-size: .92rem; font-weight: 600; line-height: 1.2; color: var(--ink); background: #fff;
+    box-shadow: 0 0 0 1px var(--line), 0 8px 16px -12px rgba(20, 87, 238, .5);
+}
+.hero__services-list .ico { flex: none; width: 24px; height: 24px; padding: 5px; border-radius: 50%; color: #fff; background: linear-gradient(135deg, var(--fresh-d), var(--fresh)); }
 .rotator {
     position: relative; display: inline-block; vertical-align: top; height: 1.65em; line-height: 1.65; overflow: hidden;
     width: var(--rw, auto); transition: width .7s var(--ease); font-weight: 700;
@@ -915,7 +924,7 @@ body.menu-open { overflow: hidden; }
     :root { --nav-h: 80px; }
     .wa-float__tip { display: grid; }
     .bento { grid-template-columns: repeat(2, 1fr); }
-    .bento__salas, .bento__colchones { grid-column: span 2; min-height: 360px; }
+    .bento__salas, .bento__sillones, .bento__colchones { grid-column: span 2; min-height: 360px; }
     .stats { grid-template-columns: repeat(4, 1fr); }
     .stat { padding: 32px 26px; }
     .swatches { grid-template-columns: repeat(3, 1fr); }
@@ -933,7 +942,7 @@ body.menu-open { overflow: hidden; }
 
 @media (min-width: 900px) {
     .pricing { grid-template-columns: repeat(3, 1fr); align-items: stretch; }
-    .reels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; max-width: 980px; margin-inline: auto; padding-inline: 0; overflow: visible; }
+    .reels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 1120px; margin-inline: auto; padding-inline: 0; overflow: visible; }
     .reel { flex: initial; }
     .reel--mid { margin-top: -34px; }
     .reel--mid + .reel { margin-top: 0; }
@@ -952,7 +961,8 @@ body.menu-open { overflow: hidden; }
     .chip--c { left: 2%; }
 
     .bento { grid-template-columns: repeat(12, 1fr); grid-auto-rows: minmax(310px, auto); gap: 18px; }
-    .bento__salas { grid-column: 1 / 7; grid-row: 1 / 3; min-height: 0; }
+    .bento__salas { grid-column: 1 / 7; grid-row: 1; min-height: 0; }
+    .bento__sillones { grid-column: 1 / 7; grid-row: 2; min-height: 0; }
     .bento__colchones { grid-column: 7 / 13; grid-row: 1; min-height: 0; }
     .bento__alfombras { grid-column: 7 / 10; grid-row: 2; }
     .bento__sillas { grid-column: 10 / 13; grid-row: 2; }
@@ -960,8 +970,8 @@ body.menu-open { overflow: hidden; }
     .bento__persianas { grid-column: 4 / 7; grid-row: 3; }
     .bento__tinacos { grid-column: 7 / 10; grid-row: 3; }
     .bento__pintura { grid-column: 10 / 13; grid-row: 3; }
-    .bento__salas .card__title { font-size: 2rem; }
-    .bento__salas .card__text { font-size: 1.02rem; }
+    .bento__salas .card__title, .bento__sillones .card__title { font-size: 2rem; }
+    .bento__salas .card__text, .bento__sillones .card__text { font-size: 1.02rem; }
 
     .cases { grid-template-columns: minmax(0, 1fr) 280px; align-items: start; gap: 22px; }
     .cases__thumbs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0; margin: 0; overflow: visible; }
