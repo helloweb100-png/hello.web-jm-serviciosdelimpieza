@@ -819,6 +819,8 @@ body.menu-open { overflow: hidden; }
 .social__label { margin-right: 4px; font-size: .86rem; font-weight: 600; color: var(--muted); }
 .social__link { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; color: var(--ink); background: #fff; border: 1px solid var(--line-strong); transition: background .3s, color .3s, transform .5s var(--ease), border-color .3s; }
 .social__link:hover { color: #fff; background: var(--brand); border-color: var(--brand); transform: translateY(-4px) rotate(-6deg); }
+.map { width: 100%; margin-top: 10px; overflow: hidden; border-radius: var(--radius); border: 1px solid var(--line); box-shadow: var(--shadow-s); }
+.map__frame { display: block; width: 100%; height: 280px; border: 0; }
 
 .contact__form { width: 100%; }
 .form { position: relative; display: grid; gap: 18px; padding: clamp(24px, 4vw, 38px); overflow: hidden; border-radius: var(--radius-xl); background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow-l); }
@@ -942,7 +944,7 @@ body.menu-open { overflow: hidden; }
 
 @media (min-width: 900px) {
     .pricing { grid-template-columns: repeat(3, 1fr); align-items: stretch; }
-    .reels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 1120px; margin-inline: auto; padding-inline: 0; overflow: visible; }
+    .reels { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; max-width: 1120px; margin-inline: auto; padding-inline: 0; overflow: visible; }
     .reel { flex: initial; }
     .reel--mid { margin-top: -34px; }
     .reel--mid + .reel { margin-top: 0; }

@@ -68,7 +68,7 @@
       "email": "jm.servicioslimpieza@gmail.com",
       "priceRange": "Desde $350 MXN",
       "slogan": "La diferencia se ve. La limpieza se siente.",
-      "address": { "@type": "PostalAddress", "addressLocality": "Ciudad de México", "addressCountry": "MX" },
+      "address": { "@type": "PostalAddress", "streetAddress": "Calle 21 #35, Col. Olivar del Conde 1ra Sección, Álvaro Obregón", "addressLocality": "Ciudad de México", "postalCode": "01400", "addressCountry": "MX" },
       "areaServed": [
         { "@type": "City", "name": "Ciudad de México" },
         { "@type": "AdministrativeArea", "name": "Área metropolitana de la Ciudad de México" }
@@ -600,6 +600,16 @@
             </header>
 
             <div class="reels" data-reels>
+                <figure class="reel reel--mid" data-reveal data-tilt>
+                    <div class="reel__frame">
+                        <video class="reel__video" muted loop playsinline preload="none" poster="img/video-lavado-sala.webp" aria-label="Video: lavado de una sala con cepillo eléctrico y extractor">
+                            <source src="img/video-lavado-sala.mp4" type="video/mp4">
+                        </video>
+                        <button class="reel__toggle" type="button" aria-label="Reproducir o pausar video de sala"><svg class="ico ico--play" aria-hidden="true"><use href="#i-play"/></svg><svg class="ico ico--pause" aria-hidden="true"><use href="#i-pause"/></svg></button>
+                        <span class="reel__live"><i></i>Trabajo real</span>
+                    </div>
+                    <figcaption class="reel__cap"><strong>Salas</strong><span>Lavado profundo cojín por cojín</span></figcaption>
+                </figure>
                 <figure class="reel" data-reveal data-tilt>
                     <div class="reel__frame">
                         <video class="reel__video" muted loop playsinline preload="none" poster="img/video-lavado-colchon.webp" aria-label="Video: lavado profundo de un colchón con cepillo y extractor">
@@ -959,14 +969,19 @@
                     <li data-reveal><a class="channel" href="https://wa.me/525632853590?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20de%20limpieza" target="_blank" rel="noopener"><span class="channel__icon channel__icon--wa"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg></span><span class="channel__txt"><small>WhatsApp</small><strong>56 3285 3590</strong></span><svg class="ico channel__go" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
                     <li data-reveal style="--d:.05s"><a class="channel" href="tel:+525632853590"><span class="channel__icon"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg></span><span class="channel__txt"><small>Llamar</small><strong>+52 56 3285 3590</strong></span><svg class="ico channel__go" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
                     <li data-reveal style="--d:.1s"><a class="channel" href="mailto:jm.servicioslimpieza@gmail.com"><span class="channel__icon"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></span><span class="channel__txt"><small>Correo</small><strong>jm.servicioslimpieza@gmail.com</strong></span><svg class="ico channel__go" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+                    <li data-reveal style="--d:.15s"><a class="channel" href="https://www.google.com/maps/search/?api=1&amp;query=Calle%2021%2035%2C%20Olivar%20del%20Conde%201ra%20Secci%C3%B3n%2C%2001400%20%C3%81lvaro%20Obreg%C3%B3n%2C%20Ciudad%20de%20M%C3%A9xico" target="_blank" rel="noopener"><span class="channel__icon"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span><span class="channel__txt"><small>Dirección</small><strong>Calle 21 #35, Col. Olivar del Conde 1ra Sección, C.P. 01400, Alcaldía Álvaro Obregón, CDMX</strong></span><svg class="ico channel__go" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
                 </ul>
 
                 <div class="social" data-reveal>
                     <span class="social__label">Síguenos</span>
-                    <!-- TODO (agencia): reemplazar los enlaces de Facebook y TikTok por las URLs exactas de los perfiles del cliente -->
+                    <!-- TODO (agencia): reemplazar el enlace de Facebook por la URL exacta del perfil del cliente -->
                     <a class="social__link" href="https://www.instagram.com/jmserviciosdelimpieza" target="_blank" rel="noopener" aria-label="Instagram de JM Servicios de Limpieza"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg></a>
                     <a class="social__link" href="https://www.facebook.com/search/top?q=JM%20Servicio%20de%20limpieza" target="_blank" rel="noopener" aria-label="Facebook de JM Servicios de Limpieza"><svg class="ico" aria-hidden="true"><use href="#i-fb"/></svg></a>
-                    <a class="social__link" href="https://www.tiktok.com/search?q=jm%20servicios%20de%20limpieza" target="_blank" rel="noopener" aria-label="TikTok de JM Servicios de Limpieza"><svg class="ico" aria-hidden="true"><use href="#i-tt"/></svg></a>
+                    <a class="social__link" href="https://www.tiktok.com/@jmserviciosdelimpieza" target="_blank" rel="noopener" aria-label="TikTok de JM Servicios de Limpieza"><svg class="ico" aria-hidden="true"><use href="#i-tt"/></svg></a>
+                </div>
+
+                <div class="map" data-reveal>
+                    <iframe class="map__frame" title="Mapa de Google Maps: ubicación de JM Servicios de Limpieza" src="https://www.google.com/maps?q=Calle%2021%2035%2C%20Olivar%20del%20Conde%201ra%20Secci%C3%B3n%2C%2001400%20%C3%81lvaro%20Obreg%C3%B3n%2C%20Ciudad%20de%20M%C3%A9xico&amp;hl=es&amp;z=16&amp;output=embed" width="600" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -1084,13 +1099,14 @@
             <ul>
                 <li><a href="https://wa.me/525632853590" target="_blank" rel="noopener">WhatsApp 56 3285 3590</a></li>
                 <li><a href="mailto:jm.servicioslimpieza@gmail.com">jm.servicioslimpieza@gmail.com</a></li>
+                <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Calle%2021%2035%2C%20Olivar%20del%20Conde%201ra%20Secci%C3%B3n%2C%2001400%20%C3%81lvaro%20Obreg%C3%B3n%2C%20Ciudad%20de%20M%C3%A9xico" target="_blank" rel="noopener">Calle 21 #35, Col. Olivar del Conde 1ra Sección, C.P. 01400, Álvaro Obregón, CDMX</a></li>
                 <li>L–V 9:00–17:00 · S–D 9:00–14:00</li>
                 <li>Atención 24 h por WhatsApp</li>
             </ul>
             <div class="social social--footer">
                 <a class="social__link" href="https://www.instagram.com/jmserviciosdelimpieza" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg></a>
                 <a class="social__link" href="https://www.facebook.com/search/top?q=JM%20Servicio%20de%20limpieza" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ico" aria-hidden="true"><use href="#i-fb"/></svg></a>
-                <a class="social__link" href="https://www.tiktok.com/search?q=jm%20servicios%20de%20limpieza" target="_blank" rel="noopener" aria-label="TikTok"><svg class="ico" aria-hidden="true"><use href="#i-tt"/></svg></a>
+                <a class="social__link" href="https://www.tiktok.com/@jmserviciosdelimpieza" target="_blank" rel="noopener" aria-label="TikTok"><svg class="ico" aria-hidden="true"><use href="#i-tt"/></svg></a>
             </div>
         </div>
     </div>
